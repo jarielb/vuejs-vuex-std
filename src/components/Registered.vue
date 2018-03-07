@@ -19,9 +19,9 @@ import { mapGetters } from 'vuex';
 export default {
   methods: {
     unregister(registration) {
-      this.$store.commit({
+      this.$store.dispatch({
         type: 'unregister',
-        user_id: registration.user_id,
+        id: registration.id,
       });
     },
   },

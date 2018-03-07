@@ -1,7 +1,8 @@
 export default {
-  register({ commit }, user_id) {
-    setTimeout(() => {
-      commit('register', user_id);
-    }, 200);
+  register({ commit }, id) {
+    commit('register', id);
+  },
+  unregister({ commit }, id) {
+    commit('unregister', id);
   },
 };

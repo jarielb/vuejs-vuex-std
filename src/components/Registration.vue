@@ -18,7 +18,10 @@ export default {
   },
   methods: {
     registerUser(user) {
-      this.$store.dispatch('register', user.id);
+      this.$store.dispatch({
+        type: 'register',
+        id: user.id,
+      });
     },
   },
 };
