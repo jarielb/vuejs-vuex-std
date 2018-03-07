@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <router-view/>
+    <app-registration></app-registration>
+    <app-registered></app-registered>
   </div>
 </template>
 
 <script>
+import Registration from './Registration';
+import Registered from './Registered';
 export default {
-  name: 'App',
+  components: {
+    appRegistration: Registration,
+    appRegistered: Registered,
+  },
 };
 </script>
 
